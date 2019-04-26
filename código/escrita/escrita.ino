@@ -22,9 +22,13 @@ void setup(){
 //========================== Declaração de pinos: 1 buzzer, 2 bota                       o
  
   pinMode(1,OUTPUT);
-  buzzer(2);
+  
   delay(2000);
-  brmt.begin();
+  if(!brmt.begin()){
+    buzzer(5);
+  }
+  else
+  buzzer(2);
 
 //========================== Calculo da média da altitude inicial
   
