@@ -41,9 +41,9 @@ void loop(){
   float comp2=0;
 
   while(!iniciar){
-    digitalWrite(1, HIGH);
+    digitalWrite(4, HIGH);
     delay(60000);
-    digitalWrite(0, LOW);
+    digitalWrite(4, LOW);
     iniciar = true;
   }
 //========================== Testa a altitude
