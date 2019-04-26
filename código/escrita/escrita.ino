@@ -25,7 +25,9 @@ void setup(){
   
   delay(2000);
   if(!brmt.begin()){
+    while(1){
     buzzer(5);
+    }
   }
   else
   buzzer(2);
@@ -45,7 +47,7 @@ void loop(){
   float comp2=0;
 
   while(!iniciar){
-    digitalWrite(4, HIGH);
+    digitalWrite(4  , HIGH);
     delay(60000);
     digitalWrite(4, LOW);
     iniciar = true;
