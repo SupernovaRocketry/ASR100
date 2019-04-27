@@ -24,10 +24,8 @@ void setup(){
   pinMode(1,OUTPUT);
   
   delay(2000);
-  if(!brmt.begin()){
-    while(1){
+  while(!brmt.begin()){
     buzzer(5);
-    }
   }
   else
   buzzer(2);
