@@ -21,7 +21,7 @@ void buzzer(int vezes){
 void setup(){ 
 //========================== Declaração de pinos: 1 buzzer, 2 bota                       o
  
-  pinMode(1,OUTPUT);
+  pinMode(4,OUTPUT);
   
   delay(2000);
   while(!brmt.begin()){
