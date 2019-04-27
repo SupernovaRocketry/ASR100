@@ -28,7 +28,9 @@ void setup(){
     buzzer(5);
   }
   else
+  {
   buzzer(2);
+  }
 
 //========================== Calculo da média da altitude inicial
   
