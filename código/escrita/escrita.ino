@@ -25,7 +25,7 @@ void setup(){
   
   delay(2000);
   while(!brmt.begin()){
-    buzzer(5);
+    buzzer(1);
   }
 
 //========================== Calculo da média da altitude inicial
