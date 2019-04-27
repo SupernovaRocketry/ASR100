@@ -27,10 +27,6 @@ void setup(){
   while(!brmt.begin()){
     buzzer(5);
   }
-  else
-  {
-  buzzer(2);
-  }
 
 //========================== Calculo da média da altitude inicial
   
@@ -51,6 +47,7 @@ void loop(){
     delay(60000);
     digitalWrite(4, LOW);
     iniciar = true;
+    delay(2000);
   }
 //========================== Testa a altitude
   //if(brmt.readAltitude()-base>20){
